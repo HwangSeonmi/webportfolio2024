@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+.orbitron{font-family: "Orbitron"};
+.noto{font-family: "Noto Sans KR"};
+.hans{font-family: "Black Han Sans"};
+.montaga{font-family: "Montaga"}
