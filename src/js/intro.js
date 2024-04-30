@@ -3,8 +3,8 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 export function intro() {
     gsap.registerPlugin(ScrollTrigger)
-    const frameCount = 14
-    let offsetValue = 400
+    const frameCount = 15
+    let offsetValue = 614
 
      gsap.to('.img',{
         backgroundPosition:-(offsetValue*frameCount)+'px',

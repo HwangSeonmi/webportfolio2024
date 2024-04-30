@@ -9,18 +9,54 @@
 </head>
 
 <body>
+  <header id="header" role="banner">
+    <div class="header_inner">
+      <div class="header_logo">
+        <img src="./src/img/logo.png" alt="">
+      </div>
+      <nav class="header_nav" role="navigation" aria-label="메인메뉴" aria-controls="primary-menu" aria-expanded="false">
+        <ul>
+          <li><a href="./project.html">Project</a></li>
+          <li><a href="./aboutme.html">About</a></li>
+          <li><a href="./view.html">View All</a></li>
+        </ul>
+      </nav>
+      <div class="header_nav_mobile" id="headerToggle" aria-controls="primary-menu" role="button" tabindex="0">
+        <span></span>
+      </div>
+    </div>
+  </header>
   <section class="sect1" id="about">
-    <div class="about_title">
-      <p>designer goal</p>
-      We offer fresh
-      experiences
-      <p>through design-development</p>
-      harmony and
-      <p>ongoing</p>
-      growth
+    <div class="img_text">
+      <h3 class="title1">keyword</h3>
+      creative,
+      <p class="title2">사용자 경험, 감각</p>
+      design& <br>development<br>
+      자기개발 추구
+      <p>성장, 소통, 책임감</p>
+      Passion
+      <!-- 디자인으로 신선한 <br>경험을 선사하며,<p>
+        <br>끊임없는 성장과 조화를 추구합니다.</p> -->
+    </div>
+    <div class="bgimg">
+      <li class="bgimg1"></li>
+      <li class="bgimg2"></li>
     </div>
   </section>
-  <section class="sect2">
+  <section id="intro">
+    <div class="intro_inner">
+      <h1 class="intro_title">designer goal
+      </h1>
+      <div class="intro_text">
+        <div class="text">
+          <p>디자인과 개발을 조화롭게</p>
+          <p>사용자에게 최고의 경험을</p>
+          <p>제공하는 것</p>
+        </div>
+        <div class="img"></div>
+      </div>
+  </section>
+  <section>
     <div class="about_wrap">
       <article class="marquee">
         <em>● Skills ●</em>
@@ -29,25 +65,17 @@
             <div class="splide ltl" id="splide1">
               <div class="splide__track splide__track-1">
                 <ul class="splide__list">
-                  <li class="splide__slide">Photoshop
-                    <br>
-                    Illustrator
-                    <br>
-                    Indsign
-                    <br>
-                    Premiere Pro
-                    <br>
-                    XD
-                  </li>
-                  <li class="splide__slide">Git
-                    <br>
-                    zeplin
-                    <br>
-                    Figma
-                  </li>
-                  <li class="splide__slide">HTML</li>
-                  <li class="splide__slide">scss</li>
-                  <li class="splide__slide">js</li>
+                  <li class="splide__slide"><img src="./src/img/skill-1.png" alt=""></li>
+                  <li class="splide__slide"><img src="./src/img/skill-2.png" alt=""></li>
+                  <li class="splide__slide"><img src="./src/img/skill-3.png" alt=""></li>
+                  <li class="splide__slide"><img src="./src/img/skill-4.png" alt=""></li>
+                  <li class="splide__slide"><img src="./src/img/skill-5.png" alt=""></li>
+                  <li class="splide__slide"><img src="./src/img/skill-6.png" alt=""></li>
+                  <li class="splide__slide"><img src="./src/img/skill-7.png" alt=""></li>
+                  <li class="splide__slide"><img src="./src/img/skill-8.png" alt=""></li>
+                  <li class="splide__slide"><img src="./src/img/skill-9.png" alt=""></li>
+                  <li class="splide__slide"><img src="./src/img/skill-10.png" alt=""></li>
+                  <li class="splide__slide"><img src="./src/img/skill-11.png" alt=""></li>
                 </ul>
               </div>
             </div>
@@ -55,64 +83,69 @@
       </article>
   </section>
 
-  <section class="sect3" id="career">
+  <section id="career">
     <h2>Designer career</h2>
-    <article class="stage2" >
-      <div class="text">
-        <p>Packaging,</p>
-        <p>Web Design and<br>Development,</p>
-        <p>Visual and Brand Identity,</p>
-        <p>Photography,</p>
-        <p>video editing </p>
-        <p>contents Design,</p>
-        <p>UI/UX,</p>
-        <p>Editor Design,</p>
-        <p>Product design,</p>
-        <p>Pop-up store</p>
+    <article class="stage2">
+      <div class="career_text">
+        <p class="p1">Packaging, </p>
+        <p class="p2">Web Design and</p>
+        <p class="p2">Development, </p>
+        <p class="p3">Visual and </p>
+        <p class="p3">Brand Identity, </p>
+        <p class="p4">Photography, </p>
+        <p class="p5">video editing,</p>
+        <p class="p6">contents Design, </p>
+        <p class="p7">UI/UX, </p>
+        <p class="p8">Editor Design, </p>
+        <p class="p9">Product design, </p>
+        <p class="p10">Pop-up store</p>
+      </div>
+      <div class="career_img">
+        <img class="berry" src="./src/img/berry.png" alt="">
+        <img class="camera" src="./src/img/camera-1.png" alt="">
+        <img class="music" src="./src/img/music-1.png" alt="">
+        <img class="pearl" src="./src/img/pearl.png" alt="">
       </div>
     </article>
+    <div class="Total">
+      <h3>Total : 5 years 5 months</h3>
+      <img class="note" src="./src/img/notebook.png" alt="">
+      <img class="time" src="./src/img/time.png" alt="">
+    </div>
   </section>
-  <div class="Total">
-    <h3>Total : 5 years 5 months</h3>
-  </div>
-  <section>
 
 
+  <section class="sect4">
+    <em>● For fun ●</em>
     <div class="fun">
-      <div class="fun_inner1">
-        <div class="img_box">
-          <img src="./src/img/fun3.JPG" alt="">
-        </div>
-        <div class="img_box">
-          <img src="./src/img/fun3.JPG" alt="">
-        </div>
-        <div class="img_box">
-          <img src="./src/img/fun3.JPG" alt="">
-        </div>
-      </div>
-      <div class="fun_inner2">
-        <div class="img_box">
-          <img src="./src/img/fun3.JPG" alt="">
-        </div>
-        <div class="img_box">
-          <img src="./src/img/fun3.JPG" alt="">
-        </div>
-      </div>
+        <ul class="fun_inner1">
+          <li><img src="./src/img/fun4.jpg" alt=""></li>
+          <li><img src="./src/img/fun3.JPG" alt=""></li>
+          <li><img src="./src/img/fun2.JPG" alt=""></li>
+        </ul>
+        <ul class="fun_inner2">
+          <li><img src="./src/img/fun1.jpeg" alt=""></li>
+          <li><img src="./src/img/fun6.jpeg" alt=""></li>
+        </ul>
     </div>
   </section>
-  <section>
-    <div class="contect">
-      <em>contect</em>
-      <ul class="icon">
-        <li><a href="#"><img src="./src/img/icon-insta.png" alt=""></a></li>
-        <li><a href="#"><img src="./src/img/icon-mail.png" alt=""></a></li>
-        <li><a href="#"><img src="./src/img/icon-call.png" alt=""></a></li>
-      </ul>
-    </div>
+  <section class="sect5">
     <div class="video">
-      <img src="./src/img/video.gif" alt="">
+      <div class="img"></div>
+      <p>My slogan is Just <br>
+        My slogan is Just do it!
+      </p>
     </div>
-    <!-- <video src="./src/img/video.gif" loop autoplay muted></video> -->
+    <div class="contect">
+      <div class="desc">
+        <p>Let's work together!</p>
+      </div>
+      <div class="icon">
+        <li><a class="icon1" href="#"><img src="./src/img/icon-insta2.png" alt=""></a></li>
+        <li><a class="icon2" href="#"><img src="./src/img/icon-mail2.png" alt=""></a></li>
+        <li><a class="icon3" href="#"><img src="./src/img/icon-call2.png" alt=""></a></li>
+      </div>
+    </div>
   </section>
   <script type="module" src="src/js/main.js"></script>
 </body>

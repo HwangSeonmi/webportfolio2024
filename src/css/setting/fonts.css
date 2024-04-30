@@ -2,28 +2,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
+
 @font-face {
     font-family: 'PartialSansKR-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
 @font-face {
     font-family: "Provica";
     src: url(/src/font/Provicali.otf);
 }
+@font-face {
+    font-family: "Prosto";
+    src: url(/src/font/ProstoOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Racing";
+    src: url(/src/font/RacingSansOne-Regular.ttf);
+}
+@font-face {
+    font-family: "SharpGrotesk-Black20";
+    src: url(/src/font/SharpGrotesk-Black20.otf);
+}
+@font-face {
+    font-family: "SharpGrotesk-Black25";
+    src: url(/src/font/SharpGrotesk-Black25.otf);
+}
+
+
 
 .orbitron{font-family: "Orbitron"};
 .noto{font-family: "Noto Sans KR"};
 .hans{font-family: "Black Han Sans"};
 .montaga{font-family: "Montaga"};
-.partia{font-family: 'PartialSansKR-Regular'};
+.partia{font-family: "PartialSansKR-Regular"};
 
 
 .provica{font-family:"Provica";}
 .Press{font-family: "Press Start 2P"};
-.racing{font-family: "Racing Sans One"};
-.prosto{font-family: "Prosto One"}
+.racing{font-family: "Racing"};
+.prosto{font-family: "Prosto"}
+.reenie{ font-family: "Reenie Beanie"}
+.sonsie{font-family: "Sonsie One"}
+.ribeye{font-family: "Ribeye"}

@@ -1,9 +1,9 @@
 :root {
-    --mainEng-font: "PartialSansKR-Regular";
+    --mainEng-font: "SharpGrotesk-Black25";;
     /*메인영어 폰트  */
     --mainKor-font: "Noto Sans KR";
     /*메인한글 폰트  */
-    --mainNum-font: "Black Han Sans";
+    --mainNum-font: "SharpGrotesk-Black25";;
     /*메인넘버 폰트  */
 
     /* 메인 bg 칼라 */

@@ -16,13 +16,24 @@ export function graphics() {
         gsap.timeline({
             scrollTrigger: {
                 trigger: imgText,
-                start: '50% 90%',
-                end: '100% 0%',
+                start: '0% 50%',
+                end: '50% 20%',
                 toggleClass: { 'targets': imgText, className: 'active' },
                 scrub: 1,
             }
         })
     })
+    // gsap.utils.toArray('.img_text').forEach(function (imgText) {
+    //     gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: imgText,
+    //             start: '0% 90%',
+    //             end: '100% 0%',
+    //             toggleClass: { 'targets': imgText, className: 'active' },
+    //             scrub: 1,
+    //         }
+    //     })
+    // })
 }
 
 
