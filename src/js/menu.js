@@ -11,4 +11,10 @@ export function menu() {
 
         })
     }
+
+    function setActive(link) {
+        links.forEach(el => el.classList.remove('on'))
+        link.classList.add('on')
+    };
 }
+

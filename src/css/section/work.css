@@ -1,163 +1,254 @@
-.pf_inner {
-    padding: 16px;
-    position: sticky;
+#work {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    /* cursor: url(sunmi.dothome.co.kr/berry.png), auto; */
+
 }
 
-.pf_title {
-    position: sticky;
-    left: 0;
+
+
+.work_inner {
+    padding: 16px;
+
+}
+
+.tbk {
+    background: #000;
+}
+
+.work_title {
+    position: absolute;
     width: 100%;
-    top: 70px;
-    font-size: 4vw;
-    line-height: 1.6;
-    font-family: var(--mainKor-font);
+    top: 28px;
+    right: -70%;
+    z-index: 99;
+    font-size: 2em;
+    font-family: "Provica";
     text-transform: uppercase;
     color: var(--black100);
-    border-bottom: .4vw solid var(--black100);
-    margin-bottom: 16px;
-    text-indent: .25vw;
+    z-index: 999;
 }
 
+/* ------------------ */
 
-.pf_title em {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 2;
-}
-
-.pf_item {
-    height: 70vh;
+.work_wrap {
     display: flex;
-    flex-direction: column;
+    margin-top: 127px;
+    margin-left: 60px;
+    width: 4400px;
+    font-family: "Noto Sans KR";
+}
+
+.box {
+    display: none
+}
+
+.work_item {
+    width: 480px;
+    height: 80vh;
+    position: relative;
+    align-items: center;
+    display: flex;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.work_item .img {
+    display: block;
+    transition: .35s;
+    margin: -15px auto;
+    width: 360px;
+    text-align: center;
+
+}
+
+.work_item:hover .img {
+    margin-top: 0px;
+
+}
+
+.work_item .img img {
+    filter: saturate(100%);
+    transition: .35s;
+}
+
+
+.work_item:hover img {
+    filter: saturate(0%);
+}
+
+.work_item .title {
+    position: absolute;
+    font-size: 1.3rem;
+    left: 0;
+    top: 0;
+    text-align: left;
+    padding: .8rem 0;
+    font-weight: 700;
+    color: var(--black100);
+
+}
+
+@keyframes blink-effect {
+    50% {
+        opacity: 0;
+    }
+}
+
+.work_item:hover .title {
+    animation: blink-effect .15s step-end infinite;
+}
+
+
+/* -----------------------box */
+.work_item:hover .box {
+    display: flex;
+}
+
+.box {
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 30px;
+    color: var(--white);
     align-items: center;
     justify-content: center;
-    position: sticky;
-    left: 0;
+    flex-direction: column;
+    font-family: "Noto Sans KR";
 }
 
-.pf_item.s1 {
-    background-color: var(--subBg100);
-    top: 190px;
-}
-
-.pf_item.s2 {
-    background-color: var(--subBg200);
-    top: 220px;
-}
-
-.pf_item.s3 {
-    background-color: var(--subBg300);
-    top: 250px;
-}
-
-.pf_item.s4 {
-    background-color: var(--subBg400);
-    top: 280px;
-}
-
-.pf_item .num {
-    font-size: 5vw;
-    font-weight: 900;
-    font-family: var(--mainNum-font);
-    position: absolute;
-    left: 1vw;
-    top: 1vw;
-}
-
-.pf_item .text {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.pf_item .text div {
-    font-size: 3vw;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-family: var(--mainEng-font);
-}
-
-.pf_item .text {
-    font-family: var(--mainKng-font);
-    margin-bottom: 1rem;
-}
-
-.pf_item .btn a {
-    text-decoration: underline;
-    font-size: 2vw;
-    color: var(--black300);
+.work_item .miniT {
     font-size: 1rem;
-    transform: .35s;
-}
-
-.pf_item .btn a:hover {
-    color: var(--black);
-}
-
-
-.pf_item .info {
-    position: absolute;
-    left: 0;
-    bottom: 2%;
-    width: 98%;
-    margin-left: 1%;
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
+    color: var(--white);
+    margin-top: 1rem;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-.pf_item .info span {
-    font-family: var(--mainKor-font);
-    font-size: 15px;
-    padding: 5px 0;
-    text-transform: uppercase;
+.work_item .miniT li {
+    border: 1px solid var(--white);
+    padding: .3rem 1.3rem;
+    border-radius: 50px;
 }
 
-/* ----------------------------- */
+
+.work_item .site {
+    display: block;
+    text-align: center;
+    padding: .5rem 1.5rem;
+    margin-top: 1rem;
+    background: var(--white);
+    color: var(--black100);
+    border-radius: 60px;
+}
+
+.detail {
+    width: 90%;
+    font-size: 1.2em;
+}
+
+.work_item.w1 {
+    border: 1px solid #eee;
+}
+
+.work_item.w1 img {
+
+    width: 130%;
+
+    margin-left: -55px;
+}
+
+.work_item.w2 {
+    border: 1px solid #eee;
+}
+
+.work_item.w3 {
+    background: var(--white);
+    border-radius: 500px;
+    box-shadow: 0px 0px 10px #c6c6c6;
+}
+
+.work_item.w4 {
+    position: relative;
+}
+
+.work_item.w4 .ap {
+    top: 25%;
+    left: 5%;
+    position: absolute;
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;
+
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.work_item.w5 img {
+    border-radius: 20px;
+
+}
+
+.work_item.w6 {
+    border: 1px solid #eee;
+
+}
+
+.work_item.w7 img {
+    width: 130%;
+    margin-top: 200px;
+    margin-left: -55px;
+}
+
+.work_item.w8 {
+    border: 1px solid #eee;
+}
+
+.work_item.w9 {
+    border: 1px solid #eee;
+}
+
+.work_item .w10 {
+    border: 1px solid #eee;
+}
+
+.work_item .w11 img{
+    border-radius: 20px;
+}
+
+.work_item .w12 {
+    border: 1px solid #eee;
+}
+
 
 
 
 @media screen and (max-width:768px) {
-    .pf_title {
-        width: 100%;
-        margin-bottom: 100px;
-        font-size: 30px;
+    .work_title {
+        font-size: 25px;
         height: auto;
-        top: 68px;
-        z-index: 9999;
-        background-color: var(--mainBg-color);
+        top: 30px;
+        width: 100%;
+        left:55%;
+
     }
 
-    .pf_item.s1 {
-        top: 140px;
+    .work_item {
+        width: 300px;
+        padding: 40px 30px;
+        /* height: auto; */
+
     }
 
-    .pf_item.s2 {
-        top: 180px;
-    }
-
-    .pf_item.s3 {
-        top: 220px;
-    }
-
-    .pf_item.s4 {
-        top: 240px;
-    }
-
-    .pf_num {
-        font-size: 50px;
-        left: 20px;
-        top: 20px;
-    }
-
-    .pf_item .text div {
-        font-size: 26px;
-    }
-
-   
-    .pf_item .info span {
-        font-size: 10px;
-        padding: 20px;
-    }
 }

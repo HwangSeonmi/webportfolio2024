@@ -16,11 +16,11 @@ export function splide() {
 }
 
 // new Splide('#splide2', {
-//     direction: 'rtl',
+//     // direction: 'rtl',
 //     type: "loop",
 //     autoWidth: true,
 //     focus: 'center',
-//     gap: 30,
+//     gap: 10,
 //     autoScroll: {
 //         speed: 1.5,
 //     },

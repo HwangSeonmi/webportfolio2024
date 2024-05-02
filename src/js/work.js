@@ -9,7 +9,7 @@ export function work(){
         ease:"none",
         scrollTrigger:{
             trigger:"#work",
-            start:'top 56px',
+            start:'top 0',
             end:'+=4000',
             pin:true,
             scrub:1,
