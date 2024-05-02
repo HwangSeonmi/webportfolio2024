@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,92 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="icon" href="./src/img/pcon.ico">
 </head>
+
 <body>
-    
+    <div class="cursor">
+        <img src="./src/img/berry.gif">
+    </div>
+    <header id="header" role="banner">
+        <div class="header_inner">
+            <div class="header_logo">
+                <a href="./index.html"><img src="./src/img/logo.png" alt=""></a>
+            </div>
+            <nav class="header_nav" role="navigation" aria-label="메인메뉴" aria-controls="primary-menu"
+                aria-expanded="false">
+                <ul>
+                    <li><a class="on" href="./work.html">Work</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./view.html">View</a></li>
+                </ul>
+            </nav>
+            <div class="header_nav_mobile" id="headerToggle" aria-controls="primary-menu" role="button" tabindex="0">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <section id="view">
+        <div class="view_inner">
+            <div class="view_wrap">
+                <article class="stage1">
+                    <div class="inner">
+                        <div class="view_box">
+                            <img src="./src/img/view.jpg" alt="">
+                        </div>
+                        <div class="view_text">
+                            <h3>All work</h3>
+                            <p>graphics, UX/UI, Web site,
+                                illustrator
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="stage2">
+                    <div class="inner"></div>
+                    <ul>
+                        <li>
+                            <div class="view_box">
+                                <img src="./src/img/view.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="view_box">
+                                <img src="./src/img/view.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="view_box">
+                                <img src="./src/img/view.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="view_text">
+                        <p class="viewtitle1">사용자의 요구에 맞는 최적의 UI 디자인을 찾아줍니다.</p>
+                        <p class="viewtitle2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio labore tempore
+                        </p>
+                        <p class="viewtitle3">사용자의 요구에 맞는 최적의 UI 디자인을 찾아줍니다.</p>
+                    </div>
+                    <ul class="size">
+                        <li>
+                            <div class="view_box">
+                                <img src="./src/img/view.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="view_box">
+                                <img src="./src/img/view.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="view_text size">
+                        <p class="viewtitle1">봄 여행</p>
+                        <p class="viewtitle2">봄 여행</p>
+                        <p class="viewtitle3">봄 여행</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="src/js/main.js"></script>
 </body>
+
 </html>

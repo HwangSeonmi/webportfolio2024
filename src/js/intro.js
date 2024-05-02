@@ -6,7 +6,7 @@ export function intro() {
     const frameCount = 15
     let offsetValue = 614
 
-     gsap.to('.img',{
+     gsap.to('.sect2 .intro_text .img',{
         backgroundPosition:-(offsetValue*frameCount)+'px',
         ease:'steps('+frameCount+')',
         scrollTrigger:{

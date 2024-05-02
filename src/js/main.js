@@ -1,10 +1,11 @@
 import { menu } from "./menu.js"
 import { intro } from "./intro.js"
 import { work } from "./work.js"
-import { graphics } from "./graphics.js"
+import { about } from "./about.js"
 import { link } from "./link.js"
 import { smooth } from "./smooth.js"
 import { splide } from "./splide.js"
+import { view } from "./view.js"
 
 
 
@@ -14,9 +15,9 @@ window.addEventListener('load', function () {
     menu()
     intro()
     work()
-    graphics()
+    about()
     splide()
-
+    view()
 })
 
 
@@ -32,36 +33,60 @@ document.addEventListener('mousemove', (e) => {
 
 //   --------------------------
 
- window.onload = function () {
-      const imgObj = document.getElementById("imgObj");
-      let startX = 0, startY = 0, offsetX = 0, offsetY = 0;
 
-      imgObj.addEventListener("mousedown", function (e) {
-        // 드래그시 마우스 클릭 동작 방지
-        e.preventDefault();
+window.onload = function () {
+  const imgs = document.querySelectorAll(".draggable");
 
-        // 마우스 현재 좌표
-        startX = e.clientX;
-        startY = e.clientY;
+  imgs.forEach(function(img) {
+    let startX = 0, startY = 0, startLeft = 0, startTop = 0;
+    let isDragging = false;
 
-        // 이동중인 마우스의 좌표값 업데이트
-        offsetX = parseInt(imgObj.style.left) - startX;
-        offsetY = parseInt(imgObj.style.top) - startY;
+    function startDrag(e) {
+      e.preventDefault();
 
-        // 이동중이거나 마우스 드래그 상태가 아닐때의 이벤트
-        document.addEventListener("mousemove", startMove);
-        document.addEventListener("mouseup", stopMove);
-      });
+      startX = e.clientX;
+      startY = e.clientY;
 
-      function startMove(e) {
-        // 이미지 드래그시 마우스 위치의 좌표로 이동
-        imgObj.style.left = e.clientX + offsetX + 'px';
-        imgObj.style.top = e.clientY + offsetY + 'px';
-      }
+      startLeft = img.offsetLeft;
+      startTop = img.offsetTop;
 
-      function stopMove() {
-        // 드래그 상태가 아니면 모든 이벤트 제거
-        document.removeEventListener("mousemove", startMove);
-        document.removeEventListener("mouseup", stopMove);
-      }
+      isDragging = true;
+
+      document.addEventListener("mousemove", moveImage);
+      document.addEventListener("mouseup", stopDrag);
     }
+
+    function moveImage(e) {
+      if (!isDragging) return;
+
+      img.style.left = startLeft + e.clientX - startX + 'px';
+      img.style.top = startTop + e.clientY - startY + 'px';
+    }
+
+    function stopDrag() {
+      if (!isDragging) return;
+
+      isDragging = false;
+
+      // 드래그 종료 후 이미지가 아래로 이동하는 애니메이션 적용
+      img.style.transition = 'top 0.5s ease-out, bottom 0.5s ease-out';
+      img.style.top = window.innerHeight - img.offsetHeight + 'px';
+      img.style.bottom = 0;
+
+      // 이미지가 화면 밖으로 나가지 않도록 다시 위치 조정
+      if (parseInt(img.style.bottom) < 0) {
+        img.style.bottom = '0';
+      }
+
+      // 이미지에 다시 드래그 이벤트 리스너 추가
+      img.addEventListener("mousedown", startDrag);
+
+      // 이벤트 리스너 제거
+      document.removeEventListener("mousemove", moveImage);
+      document.removeEventListener("mouseup", stopDrag);
+    }
+
+    // 이미지에 초기 드래그 이벤트 리스너 추가
+    img.addEventListener("mousedown", startDrag);
+  });
+}

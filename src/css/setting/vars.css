@@ -55,5 +55,4 @@
 body {
     color: var(--black);
     background-color: var(--mainBg-color);
-    /* overflow: hidden; */
 }

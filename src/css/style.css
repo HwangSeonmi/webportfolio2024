@@ -8,18 +8,13 @@
 /* section */
 @import url(section/header.css);
 @import url(section/main.css);
-@import url(section/project.css);
 @import url(section/work.css);
-@import url(section/graphics.css);
-
-
 @import url(section/about.css);
-/* @import url(section/about.css); */
 @import url(section/splide.css);
-
+@import url(section/view.css);
 body{
     width: 100%;
     height: 100%;
     cursor: url("http://sunmi.dothome.co.kr/berry.png"), auto;
-    background-image: linear-gradient(to bottom, rgb(88, 238, 18), rgb(255, 255, 255),rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom, rgb(18, 238, 29), rgb(255, 255, 255),rgb(255, 255, 255));
 }

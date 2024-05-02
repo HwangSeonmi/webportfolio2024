@@ -3,8 +3,7 @@
     overflow: hidden;
     height: 100vh;
     position: relative;
-    /* cursor: url(sunmi.dothome.co.kr/berry.png), auto; */
-
+    background-image: linear-gradient(to bottom, rgb(18, 91, 238), rgb(255, 255, 255), rgb(255, 255, 255));
 }
 
 
@@ -14,12 +13,11 @@
 
 }
 
-.tbk {
-    background: #000;
-}
+
 
 .work_title {
     position: absolute;
+    display: block;
     width: 100%;
     top: 28px;
     right: -70%;
@@ -27,7 +25,7 @@
     font-size: 2em;
     font-family: "Provica";
     text-transform: uppercase;
-    color: var(--black100);
+    color: var(--black);
     z-index: 999;
 }
 
@@ -122,6 +120,7 @@
     justify-content: center;
     flex-direction: column;
     font-family: "Noto Sans KR";
+    z-index: 999;
 }
 
 .work_item .miniT {
@@ -155,19 +154,17 @@
     font-size: 1.2em;
 }
 
-.work_item.w1 {
-    border: 1px solid #eee;
-}
+.work_item.w1 {}
 
 .work_item.w1 img {
-
     width: 130%;
-
     margin-left: -55px;
 }
 
-.work_item.w2 {
-    border: 1px solid #eee;
+.work_item.w2 img {
+    width: 75%;
+    margin-top: 60px;
+
 }
 
 .work_item.w3 {
@@ -200,10 +197,7 @@
 
 }
 
-.work_item.w6 {
-    border: 1px solid #eee;
-
-}
+.work_item.w6 {}
 
 .work_item.w7 img {
     width: 130%;
@@ -211,25 +205,34 @@
     margin-left: -55px;
 }
 
-.work_item.w8 {
-    border: 1px solid #eee;
-}
+.work_item.w8 {}
 
 .work_item.w9 {
-    border: 1px solid #eee;
+    background: linear-gradient(silver, #000);
+    border-radius: 200px 200px 60px 60px;
 }
 
-.work_item .w10 {
-    border: 1px solid #eee;
+.work_item .w10 {}
+
+.work_item .w11 {
+    position: relative;
 }
 
-.work_item .w11 img{
-    border-radius: 20px;
+.w11>.img {
+    border-radius: 900px;
+    border: 1px solid #000;
+    overflow: hidden;
 }
 
-.work_item .w12 {
-    border: 1px solid #eee;
+.imgab {
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    width: 90%;
+    mix-blend-mode: overlay;
 }
+
+.work_item .w12 {}
 
 
 
@@ -240,7 +243,7 @@
         height: auto;
         top: 30px;
         width: 100%;
-        left:55%;
+        left: 55%;
 
     }
 
