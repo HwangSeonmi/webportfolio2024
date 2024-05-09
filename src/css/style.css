@@ -16,5 +16,5 @@ body{
     width: 100%;
     height: 100%;
     cursor: url("http://sunmi.dothome.co.kr/berry.png"), auto;
-    background-image: linear-gradient(to bottom, rgb(18, 238, 29), rgb(255, 255, 255),rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom, rgb(18, 91, 238), rgb(255, 255, 255), rgb(255, 255, 255));
 }

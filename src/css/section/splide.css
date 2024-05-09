@@ -39,40 +39,20 @@ ul.flow_list {
 
 .splide__slide:hover {
     z-index: 99;
-    background: rgba(0, 0, 0, .8);
-}
-
-/* ---------------------------index */
-/* 
-.splide2 {
-    width: 100%;
-    position: absolute;
-    bottom: 30px;
-}
-
-.splide_list2 {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.splide_list2 li {
-  
-    display: inline-block;
-    border: 1px solid #000;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-family: "Noto Sans KR";
-    text-transform: uppercase;
+    background:rgb(18, 91, 238);
+    mix-blend-mode: overlay;
 }
 
 
-#noline {
-    background-image: url(/2024web-portfolio/src/img/main.png);
-    border: transparent;
-    background: #f53636;
-    width: 50px;
-    height: 50px;
-    background-size: cover;
 
-} */
+@media screen and (max-width:768px){
+
+    .splide__slide{
+        height: 40vw;
+        width: 40vw;
+    }
+.i_am{
+    height: 50vw;
+}
+
+}

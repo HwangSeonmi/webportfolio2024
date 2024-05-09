@@ -1,7 +1,7 @@
 #work {
-    width: 100%;
-    overflow: hidden;
-    height: 100vh;
+    /* width: 100%;
+    overflow: hidden; 
+    height: 100vh; */
     position: relative;
     background-image: linear-gradient(to bottom, rgb(18, 91, 238), rgb(255, 255, 255), rgb(255, 255, 255));
 }
@@ -10,10 +10,7 @@
 
 .work_inner {
     padding: 16px;
-
 }
-
-
 
 .work_title {
     position: absolute;

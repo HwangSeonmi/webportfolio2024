@@ -9,22 +9,14 @@ export function about() {
                 start: '50% 100%',
                 toggleClass: { 'targets': imgBox, className: 'active' },
                 scrub: 1,
-            }
+                
+            }   
         })
+        .from(imgBox, { 
+            opacity: 0, 
+            y: 100, 
+            scale: 0.8, 
+            duration: 1 
+        });
     })
-    gsap.utils.toArray('.img_text').forEach(function (imgText) {
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: imgText,
-                start: '50% 90%',
-                end: '100% 0%',
-                toggleClass: { 'targets': imgText, className: 'active' },
-                scrub: 1,
-            }
-        })
-    })
-
 }
-
-
-

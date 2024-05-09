@@ -82,7 +82,7 @@ body {
   }
   
 .draggable {
-    width: 23%;
+    width: 18%;
     position: fixed;
     bottom: 0;
     opacity: 0;
@@ -155,4 +155,9 @@ body {
     .main-top img {
         width: 120%;
     }
+    .draggable {
+        width: 40%;
+      
+    }
+    
 }
