@@ -1,0 +1,139 @@
+#aboutme {
+    height: 160vh;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255),rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255), #D5FF3C);
+    /* background: var(--black); */
+    overflow: hidden;
+}
+
+.ab_inner {
+    padding: 80px;
+}
+
+.ab_item {
+    height: 36vh;
+    width: 46vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border: 1px solid #000;
+    margin: auto;
+
+}
+
+.ab-bg img {
+    height: 36vh;
+    width: 46vw;
+}
+
+.ab_item.s1 {
+    margin-top: 100px;
+    margin-left: 100px;
+    box-shadow: -15px -15px var(--subBg);
+}
+
+.ab_item.s2 {
+    margin-right: 100px;
+    box-shadow: 15px -15px var(--subBg);
+}
+
+
+.ab_item.s3 {
+    box-shadow: -15px -15px var(--subBg);
+    margin-left: 80px;
+}
+
+
+.ab_item .num {
+    font-size: 3vw;
+    font-family: var(--subEng-font);
+    color: #125BEE;
+    position: absolute;
+    left: 3vw;
+    top: 1vw;
+}
+
+.ab_item .ab_text {
+    text-align: center;
+}
+
+.ab_item .ab_text {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    font-size: 1.5vw;
+    font-family: var(--mainKor-font);
+    ;
+}
+
+
+
+.ab_item .ab_text p {
+    background: #eee;
+    padding: 0 17px;
+    border-radius: 60px;
+    font-size: 1.2vw;
+    font-family: var(--mainKor-font);
+}
+
+
+.margin-t {
+    display: flex;
+    flex-direction: column;
+    margin-top: 49px;
+}
+
+
+
+/* ----------------------------- */
+
+
+
+@media screen and (max-width:768px) {
+    #aboutme {
+        height: 140vh;
+        margin-top: -100px;
+    }
+
+    .ab_inner {
+        padding: 40px;
+    }
+
+    .ab_item {
+        width: 100%;
+    }
+
+    .ab_item.s1 {
+        margin-top: 100px;
+        margin-left: 10px;
+        box-shadow: -15px -15px var(--subBg);
+    }
+
+    .ab_item.s2 {
+        margin-right: 10px;
+        box-shadow: 15px -15px var(--subBg);
+    }
+
+
+    .ab_item.s3 {
+        box-shadow: -15px -15px var(--subBg);
+        margin-left: 10px;
+    }
+
+    .ab_item .num {
+        font-size: 2.6em;
+    }
+
+    .ab_item .ab_text div {
+        font-size: 23px;
+    }
+
+    .ab_item .ab_text p {
+        font-size: 20px;
+    }
+
+
+
+}

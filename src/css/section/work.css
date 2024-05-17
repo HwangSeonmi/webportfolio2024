@@ -17,7 +17,7 @@
     display: block;
     width: 100%;
     top: 28px;
-    right: -70%;
+    right: -68%;
     z-index: 99;
     font-size: 2em;
     font-family: "Provica";
@@ -103,7 +103,7 @@
 }
 
 .box {
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .85);
     position: absolute;
     width: 450px;
     height: 450px;
@@ -111,29 +111,30 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    border-radius: 30px;
+    border-radius: 36px;
     color: var(--white);
     align-items: center;
     justify-content: center;
     flex-direction: column;
     font-family: "Noto Sans KR";
     z-index: 999;
+    line-height: 1.5;
 }
 
 .work_item .miniT {
     font-size: 1rem;
     color: var(--white);
-    margin-top: 1rem;
+    margin-top: .5rem;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
 
-.work_item .miniT li {
+/* .work_item .miniT li {
     border: 1px solid var(--white);
     padding: .3rem 1.3rem;
     border-radius: 50px;
-}
+} */
 
 
 .work_item .site {
@@ -144,10 +145,21 @@
     background: var(--white);
     color: var(--black100);
     border-radius: 60px;
+    font-weight: bold;
+}
+
+.work_item .miniB {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+a .site {
+    margin-top: 20px;
 }
 
 .detail {
-    width: 90%;
+    width: 80%;
     font-size: 1.2em;
 }
 
@@ -165,11 +177,21 @@
 }
 
 .work_item.w3 {
-    background: var(--white);
+    /* background: var(--white);
     border-radius: 500px;
-    box-shadow: 0px 0px 10px #c6c6c6;
+    box-shadow: 0px 0px 10px #c6c6c6; */
 }
-
+.work_item.w3 img {
+    width: 130%;
+    /* margin-top: 60px; */
+}
+.nomal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    /* mix-blend-mode: multiply; */
+}
 .work_item.w4 {
     position: relative;
 }
@@ -236,11 +258,11 @@
 
 @media screen and (max-width:768px) {
     .work_title {
-        font-size: 25px;
+        font-size: 22px;
         height: auto;
-        top: 30px;
+        top: 34px;
         width: 100%;
-        left: 55%;
+        left: 52%;
 
     }
 

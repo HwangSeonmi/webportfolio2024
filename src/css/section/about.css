@@ -1,28 +1,23 @@
-.marquee_wrap {
-    /* height: 100vh; */
-    width: 100%;
-    font-size: 3vw;
-    text-align: center;
-    /* margin-top: 250px; */
-
+.scroll-1 {
+    width: 160px;
+    position: absolute;
+    right: 12%;
+    top: 10%;
+    animation: blink-effect 1s step-end infinite;
 }
 
-.marquee em {
-    text-align: center;
-    font-size: 3vw;
-    display: inline-block;
-    font-family: "Provica";
-    width: 100%;
-    padding: 40px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+.scroll-2 {
+    width: 180px;
+    position: absolute;
+    right: 20%;
+    top: 9%;
+    transform: rotate(16deg);
+    animation: blink-effect 1.3s step-end infinite;
 }
 
-.i_am {
-    margin-top: 105px;
-}
 
-/* ----------------- */
+/* ------------------------- */
+
 #intro {
     height: 100vh;
     background-image: linear-gradient(to bottom, rgb(18, 91, 238), rgb(255, 255, 255), rgb(255, 255, 255));
@@ -45,43 +40,36 @@
     gap: 20px;
 }
 
-.intro_title {
-    font-size: 8vw;
-    text-transform: uppercase;
-    line-height: 1.5;
-    font-weight: 800;
-    white-space: nowrap;
-    -webkit-text-stroke: 1px var(--black);
-}
+
 .gradient {
-    background-image: linear-gradient(45deg, #ff7e5f, #feb47b, #ffcca3);
+    background-image: linear-gradient(180deg, #ff613a, #fd9074, #ffcca3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
 
 .intro_text {
     width: 100%;
-    height: 50vh;
-    color: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
 }
 
 .intro_text .text {
-    font-size: 6vw;
-    line-height: 1.2;
-    font-weight: 900;
-    text-align: center;
-    position: relative;
+    justify-content: center;
+    margin: auto;
     z-index: 100;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    line-height: 13vw;
+    text-align: center;
+    letter-spacing: 10px;
+    position: relative;
     transition: .35s;
     cursor: pointer;
-    /* color: var(--white);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--black); */
+}
+
+.text h1 {
+    font-size: 13vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px var(--black);
 }
 
 .intro_text .img {
@@ -89,12 +77,11 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
-    /* overflow: hidden; */
+    width: 500px;
+    height: 500px;
     filter: grayscale(100%);
     opacity: 0;
-    background: url(../../img/avatar5.png);
+    background: url(../../img/avatar2.png);
 }
 
 .intro_text:hover .text {
@@ -107,35 +94,24 @@
     filter: grayscale(0);
 }
 
-/* ---------------------------keyword */
-
-.keyword {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
+.tcroll {
+    opacity: 0;
+    font-family: "Shadows Into Light";
+    font-size: 1.5em;
 }
 
-.k-box {
-    width: 90%;
-    height: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    gap: 80px;
-    align-items: center;
+
+
+/* ----------------------- */
+.flower {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 600px;
+
 }
 
-.k-box p {
-    background: rgba(255, 255, 255, .8);
-    display: inline;
-    padding: 10px 50px;
-    border: 1px solid #000;
-    font-size: 4em;
-    border-radius: 100px;
-    margin: -20px;
-}
+/* ----------float animation-----*/
 
 @keyframes float {
     0% {
@@ -151,19 +127,14 @@
     }
 }
 
-.floating-text {
+.floating {
     animation-delay: 1s;
     animation: float 2s infinite;
 }
 
-.k-img {
-    width: 400px;
-    position: absolute;
-    bottom: 10px;
-    right: 40px;
-    z-index: -20;
-    animation: rotate 6s linear infinite;
-    transform-origin: 50% 50%;
+.rotate4 {
+    animation-delay: 1s;
+    animation: rotate 5s infinite;
 }
 
 @keyframes rotate {
@@ -173,36 +144,65 @@
     }
 }
 
+
 /* ------------------ */
 
 #career {
-    /* overflow: hidden; */
-    padding: 0 80px;
+    width: 100%;
     height: 140vh;
+    padding: 0 80px;
+    overflow: hidden;
     position: relative;
     border-top: 1px solid var(--black);
+
 }
 
 #career h2 {
     font-size: 27px;
     font-family: "Provica";
     padding: 25px 0;
-    height: 12%;
-    margin-top: 30px;
+    height: 15vh;
+    line-height: 12vh;
 }
 
-.stage2 {
+.career_box1 {
     align-items: center;
-    width: 100vw;
-    padding: 0 30px;
-}
-
-.career_text {
-    display: flex;
-    flex-wrap: wrap;
     font-size: 65px;
     line-height: 120px;
-    gap: 10px;
+    width: 90vw;
+    height: 80vh;
+    transition: .35s;
+    /* display: none; */
+}
+
+.career_wrap {
+    width: 100%;
+}
+
+.career_wrap.on .career_box2 {
+    display: block;
+}
+
+.career_box2 {
+    top: 110px;
+    position: absolute;
+    align-items: center;
+    font-size: 65px;
+    line-height: 160px;
+    font-family: var(--mainKor-font);
+    font-weight: 900;
+    width: 90vw;
+    height: 90vh;
+    transition: .35s;
+    display: none;
+    background: var(--white);
+}
+
+
+.career_text {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -254,28 +254,31 @@
 }
 
 .berry {
-    width: 110px;
-    transform: translate(426%, -449%);
+    width: 100px;
+    transform: translate(476%, -465%);
     perspective: 1000px;
 }
 
 .camera {
     width: 150px;
-    transform: translate(770%, -408%);
+    transform: translate(864%, -362%);
     perspective: 1000px;
 
 }
 
-.music {
-    width: 150px;
-    transform: translate(-23%, -144%);
-    perspective: 1000px;
-}
+
 
 .pearl {
     width: 150px;
-    transform: translate(631%, -446%);
+    transform: translate(848%, -428%);
     perspective: 1000px;
+}
+
+.drop {
+    width: 150px;
+    transform: translate(680%, -557%) rotate(8deg);
+    perspective: 1000px;
+    z-index: 555;
 }
 
 .rotate {
@@ -311,11 +314,13 @@
 }
 
 .music {
+    width: 130px;
+    transform: translate(160%, -212%);
+    perspective: 1000px;
     position: relative;
     display: inline-block;
-    width: 150px;
-    transform: translate(-23%, -200%);
 }
+
 
 .hover-image {
     position: absolute;
@@ -329,12 +334,20 @@
     opacity: 1;
 }
 
+.me-photo {
+    position: absolute;
+    width: 300px;
+    right: 100px;
+    top: -15%;
+    z-index: 998;
+}
+
 /* ------------------------ */
 .Total {
     width: 90vw;
     display: block;
-    height: 150px;
-    line-height: 150px;
+    height: 140px;
+
     border-radius: 100px;
     margin: auto;
     text-align: center;
@@ -348,94 +361,7 @@
     color: var(--black);
     font-family: "Noto Sans KR";
     font-weight: 900;
-    line-height: 130px;
-}
 
-
-/* ------------------------------- */
-.sect4 {
-    /* overflow: hidden; */
-    height: 150vh;
-    position: relative;
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(18, 91, 238), rgb(255, 255, 255));
-
-}
-
-.sect4 em {
-    font-size: 27px;
-    font-family: "Provica";
-    padding: 0 80px;
-    display: block;
-    height: 10%;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-}
-
-.fun {
-    width: 90%;
-    height: 70%;
-    margin: auto;
-    padding-top: 100px;
-
-}
-
-.fun_inner1 {
-    height: 50%;
-    display: flex;
-    position: relative;
-}
-
-.fun_inner2 {
-    height: 50%;
-    display: flex;
-    position: relative;
-
-}
-
-.fun img {
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--black);
-    border-radius: 900px;
-    object-fit: cover;
-}
-
-.fun_inner1 p {
-    width: 50%;
-    font-size: 2em;
-    right: 0;
-    top: 0;
-    font-family: "Montaga";
-    /* position: absolute; */
-    text-align: right;
-}
-
-.fun li {
-    flex: 1;
-}
-
-.fun img:hover {
-    filter: grayscale(100%);
-    border-radius: 50px;
-}
-
-.text {
-    font-size: 5em;
-    z-index: 99;
-}
-
-.text1 {
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-
-}
-
-.mephoto {
-    position: absolute;
-    width: 300px;
-    z-index: 99;
-    right: 100px;
 }
 
 /* ----------------------------- */
@@ -443,6 +369,7 @@
     width: 100%;
     height: 300vh;
     position: relative;
+    /* overflow: hidden; */
     border-top: 1px solid var(--black);
 }
 
@@ -462,7 +389,6 @@
 .grain {
     overflow: hidden;
     transform: translateZ(0);
-    overflow: hidden;
 }
 
 .grain::before {
@@ -531,6 +457,8 @@
     }
 }
 
+
+
 .video-img {
     background-image: url(http://sunmi.dothome.co.kr/video.gif);
     background-size: cover;
@@ -538,7 +466,7 @@
     height: 100%;
     filter: grayscale(100%);
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
 }
 
 .contect {
@@ -579,6 +507,7 @@
     justify-content: center;
     margin-top: 30px;
     cursor: pointer;
+    z-index: 99;
 }
 
 .icon li {
@@ -610,8 +539,7 @@
     left: 5%;
     display: flex;
     gap: 30px;
-    overflow: hidden;
- 
+
 }
 
 .me-box img {
@@ -623,126 +551,136 @@
 /* ------------------------- */
 
 @media screen and (max-width:768px) {
-
-    #intro {}
-
-
-    /* ---------------------- */
-    .keyword {
-        margin-top: -250px;
-        font-size: 4px;
-        z-index: 99;
-    }
-
-    .k-box {
-        margin-left: 50px;
-        height: 20%;
-        padding: 10px;
-        gap: 60px;
-    }
-
-    .k-box p {
-        padding: 15px 40px;
-    }
-
-    .k-img {
-        left: 0;
-        top: 0;
-    }
-
-    /* ------------------ */
     .marquee em {
         font-size: 2.5em;
     }
 
     /* --------------------- */
-
-    .contect {
-        font-size: 4em;
-        text-wrap: wrap;
+    #intro {
+        width: 100%;
     }
 
-    .intro_lines.bottom .line {
-        display: block;
+    .intro_text {
+        display: flex;
+        align-items: center;
+        height: 80vh;
     }
 
-    .intro_title {
+    .text h1 {
+        align-items: center;
         text-align: center;
         margin: auto;
-        font-size: 60px;
-        line-height: 40px;
+        font-size: 16vw;
+        line-height: 16vw;
     }
 
-    .intro_text .text {
-        font-size: 40px;
+    .intro_text {
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .scroll-2 {
+        display: none;
     }
 
     /* ----------------- career_text*/
-    .career_text {
-        font-size: 2em;
-        line-height: 1.5;
-        margin-left: -80px;
+
+    #career {
+        height: 100vh;
+    }
+
+    .career_wrap {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #career h2 {
+        text-align: center;
+    }
+
+    .career_box1 {
+        width: 130%;
+        margin-left: -14%;
+        font-size: 29px;
+        line-height: 1.4;
+    }
+
+    .career_box2 {
+        margin-left: -12%;
+        width: 90%;
+        font-size: 34px;
+        line-height: 1.4;
+        height: 62vh;
     }
 
     .berry {
         width: 60px;
-        transform: translate(131%, -718%);
+        transform: translate(305%, -591%);
         perspective: 1000px;
     }
 
     .camera {
         width: 90px;
-        transform: translate(304%, -1131%);
+        transform: translate(304%, -1173%);
         perspective: 1000px;
 
     }
 
     .music {
         width: 100px;
-        transform: translate(-77%, -153%);
+        transform: translate(260%, -153%);
         perspective: 1000px;
     }
 
     .pearl {
         width: 60px;
-        transform: translate(308%, -581%);
+        transform: translate(506%, -581%);
         perspective: 1000px;
     }
 
-    .mephoto {
+    .drop {
+        display: none;
+    }
+
+    .me-photo {
         width: 176px;
-        transform: translate(68%, 183%);
+        transform: translate(45%, 8%);
         z-index: 1;
     }
 
     .Total {
+        height: 100px;
+        line-height: 90px;
         margin-left: -55px;
     }
 
     .Total h3 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     /* ----------------- */
     .sect5 {
-        overflow: hidden;
         height: 140vh;
     }
 
     .video-img {
         height: 100%;
-
     }
 
     .sect5 em {
-        top: 3%;
-        font-size: 2.5em;
+        width: 80%;
+        top: 5%;
+        font-size: 2.4em;
+        z-index: 99;
     }
 
     .contect {
         width: 90vw;
         height: 26%;
         top: 35%;
+        font-size: 4em;
+        text-wrap: wrap;
     }
 
     .lasttitle1 {
@@ -770,7 +708,6 @@
     }
 
     .me-box {
-
         bottom: 5%;
         gap: 10px;
     }

@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @font-face {
     font-family: 'PartialSansKR-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
@@ -41,7 +41,7 @@
 .hans{font-family: "Black Han Sans"};
 .montaga{font-family: "Montaga"};
 .partia{font-family: "PartialSansKR-Regular"};
-
+.shadows{font-family: "Shadows Into Light"}
 
 .provica{font-family:"Provica";}
 .Press{font-family: "Press Start 2P"};

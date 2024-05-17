@@ -1,7 +1,6 @@
 import { menu } from "./menu.js"
 import { intro } from "./intro.js"
 import { work } from "./work.js"
-import { about } from "./about.js"
 import { link } from "./link.js"
 import { smooth } from "./smooth.js"
 import { splide } from "./splide.js"
@@ -15,7 +14,7 @@ window.addEventListener('load', function () {
     menu()
     intro()
     work()
-    about()
+
     splide()
     view()
 })

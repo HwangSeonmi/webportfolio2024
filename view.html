@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>view</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="icon" href="./src/img/pcon.ico">
 </head>
+<style>
+    body {
+        background: var(--white);
+    }
+</style>
 
 <body>
     <div class="cursor">
@@ -33,67 +38,91 @@
     </header>
     <section id="view">
         <div class="view_inner">
-            <div class="view_wrap ">
+            <div class="view_wrap">
                 <article class="stage1">
                     <div class="inner">
-                        <div class="view_box">
-                            <img src="./src/img/view.jpg" alt="">
-                        </div>
+                        <a class="view_box b1" data-fancybox="gallery" data-src="./src/img/view-somyeong.png"
+                            data-caption="UX/UI App">
+                            <img src="./src/img/view-somyeong.png" />
+                        </a>
+                        <a class="view_box b2" data-fancybox="gallery" data-src="./src/img/view-so.png"
+                            data-caption="Brand pop-up store">
+                            <img src="./src/img/view-so.png" />
+                        </a>
                         <div class="view_text">
                             <h3>All work</h3>
-                            <p>graphics, UX/UI, Web site,
-                                illustrator
+                            <p>graphics, apps, illustrations,<br>branding works <br>
+                                자세한 작업물은 비핸스를 통해<br> 확인하실 수 있습니다.</p>
                             </p>
+                            <button class="bt1"><a href="https://www.behance.net/117sunmib5ec">↖︎ behance</a></button>
+                            <button class="bt2"><img src="./src/" alt="✸ resume" class="gallery-image"
+                                    data-src="./src/img/view-resume.png"></button>
                         </div>
                     </div>
                 </article>
                 <article class="stage2">
-                    <div class="inner"></div>
-                    <ul>
-                        <li>
-                            <div class="view_box">
-                                <img src="./src/img/view.jpg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="view_box">
-                                <img src="./src/img/view.jpg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="view_box">
-                                <img src="./src/img/view.jpg" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="view_text">
-                        <p class="viewtitle1">사용자의 요구에 맞는 최적의 UI 디자인을 찾아줍니다.</p>
-                        <p class="viewtitle2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio labore tempore
-                        </p>
-                        <p class="viewtitle3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, aspernatur..</p>
-                    </div>
-                    <ul class="size">
-                        <li>
-                            <div class="view_box">
-                                <img src="./src/img/view.jpg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="view_box">
-                                <img src="./src/img/view.jpg" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="view_text size">
-                        <p class="viewtitle1">Lorem ipsum dolor sit amet.</p>
-                        <p class="viewtitle2">Lorem ipsum dolor sit amet.</p>
-                        <p class="viewtitle3">Lorem ipsum dolor sit amet.</p>
+                    <div class="inner">
+                        <ul>
+                            <li>
+                                <a data-fancybox="gallery" data-src="./src/img/view-sun.gif" data-caption="graphic">
+                                    <img src="./src/img/view-sun.gif" />
+                                </a>
+                            </li>
+                            <li class="b3">
+                                <a data-fancybox="gallery" data-src="./src/img/view-woori2.png"
+                                    data-caption="Woori bank - GUI design">
+                                    <img src="./src/img/view-woori.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a data-fancybox="gallery" data-src="./src/img/view-illust2.png"
+                                    data-caption="illustration">
+                                    <img src="./src/img/view-illust.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a data-fancybox="gallery" data-src="./src/img/view-reu.png" data-caption="dfdf">
+                                    <img src="./src/img/view-reu.png" />
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="size">
+                            <li>
+                                <a data-fancybox="gallery" data-src="./src/img/view-myself2.png"
+                                    data-caption="UX/UI App">
+                                    <img src="./src/img/view-myself2.png" />
+                                </a>
+                            </li>
+                            <li> <a data-fancybox="gallery" data-src="./src/img/view-grandma.png"
+                                    data-caption="Logo design">
+                                    <img src="./src/img/view-grandma2.png" />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </article>
             </div>
         </div>
     </section>
+
+
+    <!------------ 모달 박스 ------------>
+    <div class="modal" id="modal">
+        <div class="modal-content close">
+            <img class="modal-image" src="./src/img/view-resume.png" alt="">
+        </div>
+    </div>
+
     <script type="module" src="src/js/main.js"></script>
+    <script type="module">
+        import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.esm.js";
+
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            //
+        });    
+    </script>
+
 </body>
 
 </html>

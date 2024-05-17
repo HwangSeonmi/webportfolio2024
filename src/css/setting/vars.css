@@ -1,16 +1,17 @@
 :root {
-    --mainEng-font: "SharpGrotesk-Black25";;
+    --mainEng-font: "SharpGrotesk-Black25";
     /*메인영어 폰트  */
+    --subEng-font: "Provica";
+    /*서브영어 폰트  */
     --mainKor-font: "Noto Sans KR";
     /*메인한글 폰트  */
-    --mainNum-font: "SharpGrotesk-Black25";;
-    /*메인넘버 폰트  */
+   
 
     /* 메인 bg 칼라 */
     --mainBg-color:#fff;
 
     /* 서브bg 100 */
-    --subBg100: #c2e7ff;
+    --subBg: #125BEE;
     /* 서브bg 200 */
     --subBg200: #7fcfffff;
     /* 서브bg 300 */
