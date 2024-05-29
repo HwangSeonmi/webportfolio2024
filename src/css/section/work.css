@@ -181,17 +181,20 @@ a .site {
     border-radius: 500px;
     box-shadow: 0px 0px 10px #c6c6c6; */
 }
+
 .work_item.w3 img {
     width: 130%;
     /* margin-top: 60px; */
 }
-.nomal{
+
+.nomal {
     position: absolute;
     top: 0;
     left: 0;
     width: 50px;
     /* mix-blend-mode: multiply; */
 }
+
 .work_item.w4 {
     position: relative;
 }
@@ -249,6 +252,20 @@ a .site {
     left: 5%;
     width: 90%;
     mix-blend-mode: overlay;
+}
+
+.imgac {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+    font-size: 20px;
+    font-family: var(--mainEng-font);
+    top: 20%;
+    left: 70%;
+    border: 1px solid #000;
+    background: #fff;
+    border-radius: 100px;
 }
 
 .work_item .w12 {}

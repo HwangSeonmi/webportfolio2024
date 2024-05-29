@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>view</title>
     <link rel="icon" href="./assets/pcon-BFK6oDCD.ico">
-  <script type="module" crossorigin src="./assets/main-FJCWl4f9.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BzT-MujM.css">
+  <script type="module" crossorigin src="./assets/view-ghy2G0v3.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/main-BQvHxN61.js">
+  <link rel="stylesheet" crossorigin href="./assets/main-kq_HyKRo.css">
 </head>
+<style>
+    body {
+        background: var(--white);
+    }
+</style>
 
 <body>
     <div class="cursor">
@@ -33,67 +39,83 @@
         </div>
     </header>
     <section id="view">
-        <div class="view_inner  grain2">
-            <div class="view_wrap ">
+        <div class="view_inner">
+            <div class="view_wrap">
                 <article class="stage1">
                     <div class="inner">
-                        <div class="view_box">
-                            <img src="./assets/view-1GoPAxW8.jpg" alt="">
-                        </div>
+                        <a class="view_box b1" data-fancybox="gallery" data-src="./assets/view-somyeong.png"
+                            data-caption="UX/UI App">
+                            <img src="./assets/view-somyeong-Beb7-T-q.png" />
+                        </a>
+                        <a class="view_box b2" data-fancybox="gallery" data-src="./assets/view-so.png"
+                            data-caption="Brand pop-up store">
+                            <img src="./assets/view-so-TP9-fUYR.png" />
+                        </a>
                         <div class="view_text">
                             <h3>All work</h3>
-                            <p>graphics, UX/UI, Web site,
-                                illustrator
+                            <p>graphics, apps, illustrations, branding works <br>
+                                자세한 작업물은 비핸스를 통해 확인하실 수 있습니다.</p>
                             </p>
+                            <button class="bt1"><a href="https://www.behance.net/117sunmib5ec">↖︎ behance</a></button>
+                            <button class="bt2"><a href="" class="gallery-image">✸ resume</a></button>
                         </div>
                     </div>
                 </article>
                 <article class="stage2">
-                    <div class="inner"></div>
-                    <ul>
-                        <li>
-                            <div class="view_box">
-                                <img src="./assets/view-1GoPAxW8.jpg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="view_box">
-                                <img src="./assets/view-1GoPAxW8.jpg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="view_box">
-                                <img src="./assets/view-1GoPAxW8.jpg" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="view_text">
-                        <p class="viewtitle1">사용자의 요구에 맞는 최적의 UI 디자인을 찾아줍니다.</p>
-                        <p class="viewtitle2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio labore tempore
-                        </p>
-                        <p class="viewtitle3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, aspernatur..</p>
-                    </div>
-                    <ul class="size">
-                        <li>
-                            <div class="view_box">
-                                <img src="./assets/view-1GoPAxW8.jpg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="view_box">
-                                <img src="./assets/view-1GoPAxW8.jpg" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="view_text size">
-                        <p class="viewtitle1">Lorem ipsum dolor sit amet.</p>
-                        <p class="viewtitle2">Lorem ipsum dolor sit amet.</p>
-                        <p class="viewtitle3">Lorem ipsum dolor sit amet.</p>
+                    <div class="inner">
+                        <ul>
+                            <li>
+                                <a data-fancybox="gallery" data-src="./assets/view-sun.gif" data-caption="graphic">
+                                    <img src="./assets/intro-BKsz4Iax.gif" />
+                                </a>
+                            </li>
+                            <li class="b3">
+                                <a data-fancybox="gallery" data-src="./assets/view-goods.png"
+                                    data-caption="goods">
+                                    <img src="./assets/view-goods-Cz8nTcIB.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a data-fancybox="gallery" data-src="./assets/view-illust2.png"
+                                    data-caption="illustration">
+                                    <img src="./assets/view-illust3-B9nQ_DZx.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a data-fancybox="gallery" data-src="./assets/view-reu.png" data-caption="dfdf">
+                                    <img src="./assets/view-reu-DCaORaRA.png" />
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="size">
+                            <li>
+                                <a data-fancybox="gallery" data-src="./assets/view-myself2.png"
+                                    data-caption="UX/UI App">
+                                    <img src="./assets/view-myself2-CDCxPm_j.png" />
+                                </a>
+                            </li>
+                            <li> <a data-fancybox="gallery" data-src="./assets/view-grandma.png"
+                                    data-caption="Logo design">
+                                    <img src="./assets/view-grandma2-DthcDqsd.png" />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </article>
             </div>
         </div>
     </section>
+
+
+    <!------------ 모달 박스 ------------>
+    <div class="modal" id="modal">
+        <div class="modal-content close">
+            <img class="modal-image" src="./assets/view-resume-DDNOLmzE.png" alt="">
+        </div>
+    </div>
+
+
 </body>
 
 </html>

@@ -6,9 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sunwork-about</title>
   <link rel="icon" href="./assets/pcon-BFK6oDCD.ico">
-  <script type="module" crossorigin src="./assets/main-FJCWl4f9.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BzT-MujM.css">
+  <script type="module" crossorigin src="./assets/main-BQvHxN61.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-kq_HyKRo.css">
 </head>
+<style>
+  body {
+    background: var(--white);
+  }
+</style>
 
 <body>
   <div class="cursor">
@@ -22,7 +27,7 @@
       <nav class="header_nav" role="navigation" aria-label="메인메뉴" aria-controls="primary-menu" aria-expanded="false">
         <ul>
           <li><a href="./work.html">Work</a></li>
-          <li><a href="./about.html">About</a></li>
+          <li><a id="on" href="./about.html">About</a></li>
           <li><a href="./view.html">View</a></li>
         </ul>
       </nav>
@@ -31,39 +36,56 @@
       </div>
     </div>
   </header>
-  <section class="sect2" id="intro">
+
+  <section class="sect1" id="intro">
     <div class="intro_inner">
-      <div class="title-wrap">
-        <h1 class="intro_title gradient">The </h1>
-        <h1 class="intro_title gradient">Goal </h1>
-      </div>
       <div class="intro_text">
         <div class="text">
-          <p>디자인과 개발을 조화롭게,</p>
-          <p>최적의 사용자 경험을 제공하는 것</p>
+          <h1 class="gradient">About</h1>
+          <h1 class="gradient">me</h1>
         </div>
         <div class="img"></div>
       </div>
+      <div class="scroll-1"><img src="./assets/scroll--08vBspg.png" alt=""></div>
+      <div class="scroll-2"><img src="./assets/scroll3-DJ3w2LAT.png" alt=""></div>
+      <div class="tcroll">Spin the strawberry
+        with the mouse wheel!</div>
   </section>
 
-  <section class="keyword">
-    <div class="k-box floating-text">
-      <p>사용자 경험</p>
-      <p>creative</p>
-      <p> 감각</p>
-      <p>친화력</p>
-      <p>design</p>
-      <p>자기개발</p>
-      <p>development</p>
-      <p>소통</p>
-      <p>책임감</p>
-    </div>
-    <div class="k-img">
-      <img src="./assets/Flower-Bns26LfP.png" alt="">
+  <section id="aboutme">
+    <img class="flower rotate4" src="./assets/Flower-Bns26LfP.png" alt="">
+    <div class="ab_inner">
+      <div class="ab_wrap">
+        <article class="ab_item s1 ">
+          <span class="num">The goal</span>
+          <div class="ab_text">
+            <div>디자인과 개발을 조화롭게,
+              최적의 사용자 경험을 제공하고 싶습니다.
+            </div>
+        </article>
+        <article class="ab_item s2 ">
+          <span class="num">Keyword</span>
+          <div class="ab_text">
+            <div>#사용자 경험 #creative #웹 접근성 #감각 #친화력 #design #소통
+              #자기개발 #development #책임감
+            </div>
+        </article>
+        <article class="ab_item s3">
+          <span class="num">Period</span>
+          <div class="ab_text">
+            <div class="margin-t">
+              <p>2017~2023.05</p>
+              UI/UX 디자이너
+              <p>23.11~24.05</p>
+              UI/UX웹디자인 웹퍼블리셔 프론트엔드 전문가 양성 C
+            </div>
+        </article>
+
+      </div>
     </div>
   </section>
 
-  <section>
+  <section id="marquee">
     <div class="marquee_wrap">
       <article class="marquee">
         <em>Skills</em>
@@ -88,83 +110,101 @@
             </div>
           </div>
       </article>
+    </div>
   </section>
 
   <section id="career">
-    <h2>Designer career</h2>
-    <article class="stage2">
-      <div class="career_text">
-        <p class="p1">Packaging, </p>
-        <p class="p2">Web Design and</p>
-        <p class="p2">Development, </p>
-        <p class="p3">Visual and </p>
-        <p class="p3">Brand Identity, </p>
-        <p class="p4">Photography, </p>
-        <p class="p5">video editing,</p>
-        <p class="p6">contents Design, </p>
-        <p class="p7">UI/UX, </p>
-        <p class="p8">Editor Design, </p>
-        <p class="p9">Product design, </p>
-        <p class="p10">Pop-up store</p>
-      </div>
-      <div class="career_img">
-        <div class="berry"><img class="rotate2" src="./assets/main-berry-B816h2Lk.png" alt=""></div>
-        <div class="camera"><img src="./assets/camera-1-5h6hIh-T.png" alt=""></div>
-        <img class="hover-image" src="data:image/png;base64,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" alt="">
-        <div class="pearl"><img class="rotate3" src="./assets/pearl-CwhA1NcK.png" alt=""></div>
-        <div class="music">
-          <img src="./assets/music-1-C8pJ-4TN.png" alt="기본 이미지">
-          <img src="data:image/png;base64,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" alt="호버 이미지" class="hover-image">
+    <h2>✤ Designer career</h2>
+    <div class="career_wrap">
+      <article class="career_box1">
+        <div class="career_text">
+          <p class="p1">Packaging, </p>
+          <p class="p2">Web Design and</p>
+          <p class="p2">Development, </p>
+          <p class="p3">Visual and </p>
+          <p class="p3">Brand Identity, </p>
+          <p class="p4">Photography, </p>
+          <p class="p5">video editing,</p>
+          <p class="p6">contents Design, </p>
+          <p class="p7">UI/UX, </p>
+          <p class="p8">Editor Design, </p>
+          <p class="p9">Product design, </p>
+          <p class="p10">Pop-up store</p>
         </div>
+      </article>
+      <article class="career_box2">
+        <div class="career_text">
+          <p>패키지,</p>
+          <p>웹디자인,</p>
+          <p>브랜딩 디자인,</p>
+          <p>제품 촬영,</p>
+          <p>비디오 편집,</p>
+          <p>컨텐츠 디자인,</p>
+          <p>편집디자인,</p>
+          <p>제품 디자인,</p>
+          <p>팝업스토어,</p>
+          <p>UI/UX,</p>
+          <p>인하우스,</p>
+          <p>그래픽,</p>
+          <p>app 개발</p>
+        </div>
+      </article>
+    </div>
+    <div class="career_img">
+      <div class="berry"><img class="rotate2" src="./assets/main-berry-B816h2Lk.png" alt=""></div>
+      <div class="camera"><img src="./assets/camera-1-5h6hIh-T.png" alt=""></div>
+      <div class="pearl"><img class="rotate3" src="./assets/pearl-CwhA1NcK.png" alt=""></div>
+      <div class="music">
+        <img src="./assets/music-1-C8pJ-4TN.png" alt="기본 이미지">
+        <img src="data:image/png;base64,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" alt="호버 이미지" class="hover-image">
       </div>
-      <div class="mephoto">
-        <img class="rotate" src="./assets/fun4-DDe1TT5L.png" alt="">
-      </div>
-    </article>
-
+      <div class="drop"><img src="./assets/drop-BsdUsq6P.png" alt=""></div>
+    </div>
     <div class="Total grain">
-      <h3>Total : 5 years 5 months</h3>
+      <h3>Total : 6년</h3>
     </div>
   </section>
+
   <section class="sect5">
+    <div class="me-photo">
+      <img class="rotate" src="./assets/fun4-DDe1TT5L.png" alt="">
+    </div>
     <div class="video-img"></div>
-    <em>The motifs of <br>my life are freedom, <br> joy, and love. <br> We can do anything!</em>
+    <em>The motifs of<br>my life are freedom, <br> joy, and love. <br> We can do anything!</em>
     <div class="contect grain">
       <p class="lasttitle1">Let's work together!</p>
       <p class="lasttitle2">웹 퍼블리셔와 프론트엔드 과정을 공부하며 만들어본 작업물들을 담았습니다.<br>아직은 배울 게 많지만, 경험과 함께 성장하는 사람이 되고싶습니다. </p>
       <div class="icon">
-        <li><a class="icon1" href="#"><img src="./assets/icon-go-y2mnJIwS.png" alt=""> instagram</a></li>
-        <li><a class="icon2" href="#"><img src="./assets/icon-go-y2mnJIwS.png" alt=""> e-mail</a></li>
-        <li><a class="icon3" href="#"><img src="./assets/icon-go-y2mnJIwS.png" alt=""> call</a></li>
+        <li><a class="icon1" href="https://www.instagram.com/sunstrawberryy/"><img src="./assets/icon-go-y2mnJIwS.png"
+              alt="_new"> instagram</a></li>
+        <li><a class="icon2" href="mailto:tjsal117@gmail.com"><img src="./assets/icon-go-y2mnJIwS.png" alt=""> e-mail</a></li>
+        <li><a class="icon3" href="tel:010-5678-9612"><img src="./assets/icon-go-y2mnJIwS.png" alt=""> call</a></li>
       </div>
     </div>
     <div class="coment">
       <p>↙️ I am..❤️</p>
     </div>
     <div class="me-box">
-      <img class="me-img" src="./assets/fun2-BYuzQBnX.png" alt="">
+      <img class="me-img" src="./assets/fun2-D3369ooN.png" alt="">
       <img src="./assets/fun3-B7gbqd2g.png" alt="">
     </div>
   </section>
 
-  <!-- <section class="sect4">
-    <em></em>
-    <div class="fun">
-      <ul class="fun_inner1">
-        <li><img src="./src/img/fun4.jpg" alt=""></li>
-        <li><img src="./src/img/fun1.jpeg" alt=""></li>
-        <li><img src="./src/img/fun2.JPG" alt=""></li>
-        <p>For fun</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, sed.</p>
-      </ul>
-      <ul class="fun_inner2">
-        <li><img src="./src/img/fun5.jpeg" alt=""></li>
-        <li><img src="./src/img/fun6.jpeg" alt=""></li>
-      </ul>
-    </div>
-  </section> -->
 
+  <script>
+    const careerbox = document.querySelector('.career_wrap');
+    console.log(careerbox);
 
+    careerbox.addEventListener('mouseenter', () => {
+      console.log('on')
+      event.currentTarget.classList.add('on');
+    });
+
+    careerbox.addEventListener('mouseleave', () => {
+      console.log('out')
+      event.currentTarget.classList.remove('on');
+    });
+  </script>
 </body>
 
 </html>

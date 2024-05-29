@@ -4,10 +4,14 @@
 }
 
 .view_inner {
-    margin-top: 110px;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(18, 91, 238), rgb(255, 255, 255), rgb(255, 255, 255));
+
 }
 
 .view_wrap {
+    /* border: 10px solid #f00; */
+    padding-top: 110px;
     width: 80%;
     margin: auto;
 }
@@ -41,7 +45,6 @@
 }
 
 /* ---------박스 효과 */
-.view_box {}
 
 .stage1 .view_box.b1 {
     width: 40%;
@@ -99,12 +102,13 @@
     /* font-family: "Shadows Into Light"; */
     font-size: 4vw;
     margin-bottom: 20px;
+    color: var(--subBg);
     /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
 }
 
 .view_wrap .stage1 .view_text p {
     line-height: 1.6;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: var(-black);
     font-family: var(--mainKor-font);
 }
@@ -168,9 +172,10 @@
     width: 95%;
     margin-top: 50px;
 }
+
 .stage2 .inner .b3 {
-    width: 25%;
-    margin-bottom:50px;
+    width: 35%;
+    margin-bottom: 100px;
 }
 
 /* =--------------- */
@@ -227,22 +232,20 @@
         margin: auto;
     }
 
-    .view_wrap img {
-        width: 90%;
-    }
 
     .stage1 .inner {
         flex-direction: column;
     }
 
     .stage1 .view_text {
-        width: 100%;
+        width: 80%;
         text-align: center;
         padding-top: 0;
+        margin: auto;
 
     }
 
-    .stage1 .view_text h3 {
+    .view_wrap .stage1 .view_text .stage1 .view_text h3 {
         font-size: 2.5em;
     }
 
@@ -270,5 +273,10 @@
     .view_wrap .stage2 ul li:nth-child(1) {
         width: 100%
     }
-  
+
+    .stage2 .inner .b3 {
+        width: 55%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
 }

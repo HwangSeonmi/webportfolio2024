@@ -1,7 +1,7 @@
 #aboutme {
     height: 160vh;
     position: relative;
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255),rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255), #D5FF3C);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), #D5FF3C);
     /* background: var(--black); */
     overflow: hidden;
 }
@@ -11,7 +11,7 @@
 }
 
 .ab_item {
-    height: 36vh;
+    height: 40vh;
     width: 46vw;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,7 @@
 }
 
 .ab_item.s1 {
+    font-size: 1.5vw;
     margin-top: 100px;
     margin-left: 100px;
     box-shadow: -15px -15px var(--subBg);
@@ -37,10 +38,12 @@
 .ab_item.s2 {
     margin-right: 100px;
     box-shadow: 15px -15px var(--subBg);
+    font-size: 2.5vw;
 }
 
 
 .ab_item.s3 {
+    font-size: 1.5vw;
     box-shadow: -15px -15px var(--subBg);
     margin-left: 80px;
 }
@@ -51,8 +54,8 @@
     font-family: var(--subEng-font);
     color: #125BEE;
     position: absolute;
-    left: 3vw;
-    top: 1vw;
+    left: 2vw;
+    top: .5vw;
 }
 
 .ab_item .ab_text {
@@ -63,7 +66,7 @@
     width: 80%;
     margin: auto;
     text-align: left;
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
     font-family: var(--mainKor-font);
     ;
 }
@@ -103,6 +106,7 @@
 
     .ab_item {
         width: 100%;
+        height: 38vh;
     }
 
     .ab_item.s1 {
@@ -123,15 +127,15 @@
     }
 
     .ab_item .num {
-        font-size: 2.6em;
+        font-size: 5em;
     }
 
     .ab_item .ab_text div {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .ab_item .ab_text p {
-        font-size: 20px;
+        font-size: 22px;
     }
 
 
