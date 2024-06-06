@@ -18,13 +18,13 @@
 
 .view_text .bt1 {
     width: 300px;
-    height: 60px;
-    border-radius: 10px;
+    height: 100px;
+    border-radius: 20px;
     margin-top: 40px;
     cursor: pointer;
     font-size: 30px;
     border: transparent;
-    color: rgb(18, 91, 238);
+    color: var(--black);
     font-family: "Provica"
 }
 
@@ -36,7 +36,7 @@
     cursor: pointer;
     font-size: 30px;
     border: transparent;
-    color: #ff613a;
+
     font-family: "Provica"
 }
 
@@ -178,50 +178,7 @@
     margin-bottom: 100px;
 }
 
-/* =--------------- */
 
-
-.gallery-image.expanded {
-    width: 50%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 888;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 888;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(244, 244, 244, 0.7);
-    backdrop-filter: blur(10px);
-    overflow: auto;
-}
-
-.modal-content {
-    margin: 6% auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 80%;
-
-}
-
-.modal-content img {
-    width: auto;
-    height: 100%;
-
-
-}
 
 
 
